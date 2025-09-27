@@ -22,7 +22,7 @@ public  class Lucky extends Hero {
 
         if (dice1 == dice2) {
             boss.setHealth(boss.getHealth() - dice1);
-            System.out.println("Кости совпали! Босс теряет " + dice1 + " HP");
+            System.out.println("Кости совпали!\uD83C\uDFB2 Босс теряет " + dice1 + " HP");
         }else {
            Hero randomHero = heroes[random.nextInt(heroes.length)];
            while (randomHero == this || randomHero.getHealth() <=0){
@@ -30,7 +30,7 @@ public  class Lucky extends Hero {
             }
            int damage = dice1 + dice2;
            randomHero.setHealth(randomHero.getHealth() - damage);
-            System.out.println("Кости не совпали! " + randomHero.getName() + " теряет " + damage + " HP");
+            System.out.println("Кости не совпали!\uD83C\uDFB2 " + randomHero.getName() + " теряет " + damage + " HP");
         }
     }
 

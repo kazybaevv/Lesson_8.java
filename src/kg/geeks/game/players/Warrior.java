@@ -14,7 +14,7 @@ public class Warrior extends Hero {
         int crit = RPG_Game.random.nextInt(2, 6) * this.getDamage();
         boss.setHealth(boss.getHealth() - crit);
         System.out.println("Warrior " + this.getName()
-                + " hits critically " + crit);
+                + " hits critically \uD83D\uDCA5" + crit);
     }
 
 

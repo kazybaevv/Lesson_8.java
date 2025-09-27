@@ -3,6 +3,7 @@ package kg.geeks.game.players;
 import java.util.List;
 
 public  class Hero extends GameEntity {
+
     private SuperAbility ability;
 
     public Hero(int health, int damage, String name, SuperAbility ability) {
@@ -25,6 +26,7 @@ public String toString(){
     public void applySuperPower(Boss boss, Hero[] heroes) {
 
     }
+
 
 
 }

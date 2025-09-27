@@ -8,10 +8,10 @@ import java.util.Random;
 public class RPG_Game {
 
     public static Random random = new Random();
-    private static int roundNumber;
+    public static int roundNumber;
 
     public static void startGame() {
-        Boss boss = new Boss(1000, 50, "Dark Lord");
+        Boss boss = new Boss(1300, 80, "Dark Lord");
 
         Warrior warrior1 = new Warrior(280, 15, "Saifullo");
         Warrior warrior2 = new Warrior(270, 20, "Vlad");
@@ -20,7 +20,10 @@ public class RPG_Game {
         Medic assistant = new Medic(300, 5, "Sirius", 5);
         Berserk berserk = new Berserk(260, 15, "Assassin");
         Lucky lucky = new Lucky(240,25,"Ringmaster");
-        Hero[] heroes = {warrior1, doc, magic, berserk, warrior2, assistant,lucky};
+        Samurai samurai = new Samurai(200,25,"Naruto");
+        Spitfire spitfire = new Spitfire(300,10,"Axe");
+        King king = new King(220,0,"Wraith King");
+        Hero[] heroes = {warrior1, doc, magic, berserk, warrior2, assistant,lucky,samurai, spitfire, king};
 
         printStatistics(boss, heroes);
         while (!isGameOver(boss, heroes)) {

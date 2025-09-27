@@ -12,7 +12,7 @@ public class Berserk extends Hero {
     public void applySuperPower(Boss boss, Hero[] heroes) {
         boss.setHealth(boss.getHealth() - blockedDamage);
         System.out.println("Berserk " + this.getName()
-                + " reverted " + blockedDamage);
+                + " reverted \uD83D\uDD04 " + blockedDamage);
     }
 
 
